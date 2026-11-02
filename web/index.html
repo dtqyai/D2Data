@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'">
+<title>D2R 离线数据库</title>
+<link rel="icon" href="/items/misc/rune/ist_rune.png">
+<link rel="stylesheet" href="/offline.css">
+<script type="module" src="/offline.js"></script>
+</head>
+<body class="game-d2r">
+<header id="offline-toolbar">
+<a id="offline-home" href="/d2r/data/runeword">D2R 离线数据库</a>
+<span id="data-version" role="status">读取本地数据…</span>
+<div class="offline-actions">
+<label class="sr-only" for="offline-language">数据语言</label>
+<select id="offline-language" aria-label="数据语言"><option value="zhCN">简体中文</option><option value="zhTW">繁體中文</option><option value="enUS">English</option></select>
+<button id="info-button" type="button" aria-label="数据来源及版本">数据详情</button>
+</div>
+</header>
+<nav id="offline-nav" aria-label="站点选项卡"></nav>
+<main id="app"><p class="loading">正在读取本地资料…</p></main>
+<dialog id="data-dialog" aria-labelledby="data-title">
+<div class="dialog-head"><h2 id="data-title">数据详情</h2><button id="close-dialog" aria-label="关闭">×</button></div>
+<dl id="data-details"></dl>
+</dialog>
+</body>
+</html>

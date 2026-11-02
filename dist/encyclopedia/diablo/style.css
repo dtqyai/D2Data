@@ -1,0 +1,28 @@
+a:link			{ font-family: Arial,Helvetica,Sans-Serif; color: #B4AC92; font-weight: normal }
+a:visited		{ font-family: Arial,Helvetica,Sans-Serif; color: #928A72; font-weight: normal }
+a:active		{ font-family: Arial,Helvetica,Sans-Serif; color: #ffffff; font-weight: normal }
+a:hover			{ font-family: Arial,Helvetica,Sans-Serif; color: #ffffff; font-weight: normal }
+body { font-family: Arial,Helvetica,Sans-Serif; color: #afafaf; font-size: 12px; 
+    margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;}
+td {
+	font-size: 12px;
+	line-height: 150%;
+	color:afafaf;
+	
+}
+.title1 {  color: #afafaf; }
+.title2 {  font-size: 14px; color: #ffffff; }
+.craft {  color:#FF9900; }
+.title3 {  font-family:"Verdana";}
+.set { color:#00c400;}
+.unique1 { color:#908858;}
+.unique { color:#cebc86;}
+.magic { color:#4850b8;}
+.rare {color:#ffff00;}
+.bai {color:#FFFFFF;}
+.back {color:#20100a;}
+.red { color:#FF0000;}
+.bliz {color:#0099cc}

@@ -1,0 +1,54 @@
+<section class="offline-database-page boss-page">
+<h1 class="offline-page-title">D4 Boss计时</h1>
+
+      <div class="boss-cards">
+        <div class="boss-card normal">
+          <h2 class="boss-card-title">巢穴首领</h2>
+          <p class="boss-label">下次刷新时间</p>
+          <p class="boss-spawn-time" id="n-spawn">计算中…</p>
+          <p class="boss-label">距离刷新还有</p>
+          <!-- role="timer" stays quiet per tick on purpose: adding aria-live
+               here would make screen readers announce the digits every second. -->
+          <div class="boss-countdown-row" role="timer">
+            <div class="boss-digit-row">
+              <div class="boss-digit-col">
+                <span class="boss-time-number" id="n-m">00</span>
+                <span class="boss-time-unit">分</span>
+              </div>
+              <span class="boss-time-sep" aria-hidden="true">:</span>
+              <div class="boss-digit-col">
+                <span class="boss-time-number" id="n-s">00</span>
+                <span class="boss-time-unit">秒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="boss-card world">
+          <h2 class="boss-card-title">世界首领</h2>
+          <p class="boss-label">下次刷新时间</p>
+          <p class="boss-spawn-time" id="w-spawn">计算中…</p>
+          <p class="boss-label">距离刷新还有</p>
+          <div class="boss-countdown-row" role="timer">
+            <div class="boss-digit-row">
+              <div class="boss-digit-col">
+                <span class="boss-time-number" id="w-h">00</span>
+                <span class="boss-time-unit">时</span>
+              </div>
+              <span class="boss-time-sep" aria-hidden="true">:</span>
+              <div class="boss-digit-col">
+                <span class="boss-time-number" id="w-m">00</span>
+                <span class="boss-time-unit">分</span>
+              </div>
+              <span class="boss-time-sep" aria-hidden="true">:</span>
+              <div class="boss-digit-col">
+                <span class="boss-time-number" id="w-s">00</span>
+                <span class="boss-time-unit">秒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<p class="boss-schedule-note">按预设周期推算，时间为本机时区。</p>
+</section>

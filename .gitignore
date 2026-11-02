@@ -1,0 +1,22 @@
+# Dependencies, local state, and build scratch files
+node_modules/
+.wrangler/
+.cache/
+dist.next/
+dist.previous/
+__pycache__/
+.DS_Store
+.env
+.env.*
+*.log
+/*.zip
+
+# Data acquisition and update tools run only on this computer
+/tools/*.py
+/同步数据.command
+/README.local.md
+/web/content-layout.js
+/web/database-layout.js
+
+# Encyclopedia is published once, under dist/encyclopedia/
+/web/encyclopedia/

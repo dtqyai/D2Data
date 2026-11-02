@@ -1,0 +1,94 @@
+{
+  "non_ascii_content_preserved": true,
+  "text_files_checked": 419,
+  "changed_non_ascii_files": [],
+  "successful_archive_records_checked": 3154,
+  "archived_paths_not_saved": [],
+  "local_http_checks": [
+    {
+      "path": "index.htm",
+      "status": 200,
+      "bytes": 15594
+    },
+    {
+      "path": "basics/index.htm",
+      "status": 200,
+      "bytes": 37113
+    },
+    {
+      "path": "classes/index.htm",
+      "status": 200,
+      "bytes": 15033
+    },
+    {
+      "path": "skills/index.htm",
+      "status": 200,
+      "bytes": 17121
+    },
+    {
+      "path": "items/index.htm",
+      "status": 200,
+      "bytes": 18314
+    },
+    {
+      "path": "monsters/index.htm",
+      "status": 200,
+      "bytes": 14670
+    },
+    {
+      "path": "npcs/index.htm",
+      "status": 200,
+      "bytes": 16079
+    },
+    {
+      "path": "quests/index.htm",
+      "status": 200,
+      "bytes": 16026
+    },
+    {
+      "path": "maps/index.htm",
+      "status": 200,
+      "bytes": 14966
+    },
+    {
+      "path": "faq/index.htm",
+      "status": 200,
+      "bytes": 14600
+    },
+    {
+      "path": "diablo1/index.htm",
+      "status": 200,
+      "bytes": 27150
+    },
+    {
+      "path": "d1beta/index.htm",
+      "status": 200,
+      "bytes": 18932
+    },
+    {
+      "path": "hellfire/index.htm",
+      "status": 200,
+      "bytes": 21876
+    },
+    {
+      "path": "items/elite/umaces.htm",
+      "status": 200,
+      "bytes": 31003
+    },
+    {
+      "path": "skills/sorceress-cold.htm",
+      "status": 200,
+      "bytes": 105363
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 940
+    },
+    {
+      "path": "images/items/elite/stormlash.gif",
+      "status": 200,
+      "bytes": 990
+    }
+  ]
+}

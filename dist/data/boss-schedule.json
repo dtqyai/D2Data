@@ -1,0 +1,10 @@
+{
+  "world": {
+    "baseTime": "2023-10-27T22:00:00+08:00",
+    "intervalSeconds": 12600
+  },
+  "normal": {
+    "baseTime": "2026-03-31T18:45:00+08:00",
+    "intervalSeconds": 2700
+  }
+}
