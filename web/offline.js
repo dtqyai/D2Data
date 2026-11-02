@@ -47,6 +47,6 @@ try{
   const engine=await import(manifest.main),component=await import(manifest.pages[page]);
   engine.mountOffline(component.default);
   const {installTooltips}=await import('/tooltips.js');installTooltips(engine);
-  document.title=manifest.modules[page]+' · D2R 离线数据库';
+  document.title=manifest.modules[page]+' · D2数据库';
  }
 }catch(error){$('app').textContent='页面加载失败：'+error.message;console.error(error.stack||String(error))}

@@ -1,6 +1,6 @@
 # D2Data
 
-暗黑资料站，包含 D2R 离线数据库、D4 Boss计时和原版百科。使用原生 HTML、CSS、JavaScript，Cloudflare Worker 仅负责页面路由与静态资源响应。
+暗黑资料站，包含 D2数据库、D4 Boss计时和原版百科。使用原生 HTML、CSS、JavaScript，Cloudflare Worker 仅负责页面路由与静态资源响应。
 
 ## 功能
 
