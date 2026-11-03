@@ -31,7 +31,7 @@ npx wrangler deploy
 | 部署命令 | `npx wrangler deploy` |
 | 静态资源目录 | `dist`，已在 Wrangler 配置中指定 |
 
-构建仅整理本仓库已有页面文件，不会联网抓取或更新数据库。线上运行不需要 Python、数据库服务、定时任务或数据更新接口。
+构建整理本仓库已有页面文件，并应用数据库引擎的离线适配，不会联网抓取或更新数据库。线上运行不需要 Python、数据库服务、定时任务或数据更新接口。
 
 百科旧页面使用原有编码声明。Worker 对百科 HTML 保留 `text/html` 类型，不强制 UTF-8；不存在的归档页面仍返回 404。
 
@@ -61,13 +61,16 @@ D2R 数据库和 Boss 计时可断网使用。百科沿用原离线副本，原�
 | `web/` | 本站页面、样式、交互和 Boss 配置源文件 |
 | `dist/` | 已准备好的完整站点和数据资源 |
 | `dist/encyclopedia/` | 原样保留的百科副本及来源记录 |
-| `tools/build-local.mjs` | 将页面源文件复制到静态目录，无下载行为 |
+| `tools/build-local.mjs` | 复制页面源文件并应用引擎适配，无下载行为 |
+| `tools/offline-engine.mjs` | 数据预加载与数据库选项卡切换的引擎适配 |
 | `worker.mjs` | Worker 页面路由与百科编码处理 |
 | `wrangler.jsonc` | Worker 与 Static Assets 配置 |
-| `tests/` | 计时边界及 Worker 路由测试 |
+| `tests/` | 数据加载、计时边界及 Worker 路由测试 |
 | `serve.py` | 可选的本地静态预览服务 |
 
 百科资源只在 `dist/encyclopedia/` 保存一份，避免将相同图片重复放入仓库。
+
+数据库首屏并行加载样式、程序、基础数据库、当前语言包和动画数据。九个 D2R 选项卡之间复用内存中的数据库，不整页刷新；语言切换重新载入对应语言。
 
 ## 修改页面与数据快照
 
